@@ -40,7 +40,7 @@ def lambda_handler(event, context):
     }
 #This is function to fetch the secrets from AWS secret manager.    
 def get_secret():
-    secret_name = "dbsecret" #Name of the secret given in AWS
+    secret_name = "mariadbsecret" #Name of the secret given in AWS
     region_name = "ap-south-1"
 
     # Create a Secrets Manager client
